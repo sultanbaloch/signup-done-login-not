@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p id="name"> Name:</p>
+    <p id="email"> Email:</p>
+    <p id="password">Password:</p>
+</div>
+<script>
+let names = JSON.parse(localStorage.getItem("name"))
+let emails = JSON.parse(localStorage.getItem("email"))
+let passwords = JSON.parse(localStorage.getItem("password"))
+
+document.getElementById("name").innerHTML = names;
+document.getElementById("email").innerHTML = emails;
+document.getElementById("password").innerHTML = passwords;
+
+</script>
+</body>
+</html>
